@@ -1,0 +1,23 @@
+name: Update readme
+on:
+  push:
+    branches: 
+      - master
+    paths-ignore:
+      - 'README.md'
+jobs:
+  publish-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Check out tweety to readme action
+        id: markdown
+        uses: meroware/tweety-readme-action@master
+        with:
+          tweeter-token: "test token"
+          github-token: ${{ secrets.MERGE_TOKEN }}
+      - run: sh +x ./push-github
+        env:
+          TWEETER_MARKDOWN: ${{ steps.markdown.outputs.tweet-markdown }}
+          MERGE_TOKEN: ${{ secrets.MERGE_TOKEN }}

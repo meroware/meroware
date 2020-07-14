@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e 
+
+cat >./README.md <<EOL
+Hello, I am Edward Romero
+
+Latest Tweeter
+$TWEETER_MARKDOWN
+EOL
+
+REMOTE_REPO="https://$MERGE_TOKEN@github.com/legolamel/legolamel.git"
+
+cd "${GITHUB_WORKSPACE}"
+rm -rf .git 
+git init 
+git config user.name "${GITHUB_ACTOR}"
+git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+git add .
+git commit -m "Auto update readme"
+git push --force $REMOTE_REPO master:master
