@@ -1,6 +1,6 @@
 Hello, I am Edward Romero
 
-I am a software developer and recently I started to created super fun videos in youtube.
+I create code and super fun videos in youtube.
 </br>
 <div style="clear: left;">
   <p style="float: left;">
