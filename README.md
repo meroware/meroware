@@ -9,6 +9,6 @@ I create code and super fun videos in youtube.
       <img alt="meroware" style="float:left";" src="https://yt3.ggpht.com/a-/AOh14GibaU1lhue324Q68n0M-nrbxL2WgtSf6hp2rqzQ=s100-c-k-c0xffffffff-no-rj-mo"
      width=50">
     </a>
-    &nbsp; to go to channel 😆
+    &nbsp; to go to channel 🤩
   </p>
 </div>
